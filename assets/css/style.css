@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: #16161d;
+}
+
+:root {
+    --color-destaq: #fef0ec;
+    --background-root: rgb(190, 187, 187);
+    --form-color: #a09da2;
+    --form-btn-color: #2f243a;
+    --task-color: #817e88;
+    --btn-option-color: #a39cb1;
+}
+
+.root {
+    width: 100%;
+    height: 100vh;
+    background: var(--background-root);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    margin: 10px 0;
+    width: 80%;
+    border-bottom: 1px solid #16161d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+}
+
+.main-container {
+    max-width: 500px;
+    padding: 15px 20px;
+    background: var(--form-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+input {
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 350px;
+}
+
+.form-button {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: var(--form-btn-color);
+    color: var(--color-destaq);
+}
+
+.add-button {
+    padding: 2px 8px;
+    font-size: 21px;
+}
+
+.tasks-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-style {
+    width: 100%;
+    background: var(--task-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    max-height: 80px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn-task-option {
+    cursor: pointer;
+    padding: 5px;
+    background: var(--btn-option-color);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
