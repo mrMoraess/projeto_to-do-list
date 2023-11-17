@@ -105,16 +105,48 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    gap: 5px;
 }
 
-.btn-task-option {
-    cursor: pointer;
-    padding: 5px;
-    background: var(--btn-option-color);
+.btn-task-style {
     font-size: 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-task-style img {
+    z-index: -1;
+}
+
+.btn-task-delete {
+    background: red;
+}
+
+.btn-task-edit {
+    background: yellow;
+}
+
+.btn-task-concluir {
+    background: rgb(0, 255, 0);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-task-container {
+    display: none;
+}
+
+#edit-task {
+    margin: 0 10px 0 0;
 }
 
 .hidden {
